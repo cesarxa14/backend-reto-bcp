@@ -1,7 +1,7 @@
 import { Injectable, Logger, OnModuleDestroy, OnModuleInit } from "@nestjs/common";
-import { Kafka, Producer, Consumer } from 'kafkajs';
+import { Kafka, Producer } from 'kafkajs';
 import { v4 as uuidv4 } from 'uuid';
-import { EventPublisher } from "../../../../../domain/repositories/event-publisher.repository";
+import { EventPublisher } from "../../../domain/repositories/event-publisher.repository";
 
 @Injectable()
 export class KafkaService implements OnModuleInit, OnModuleDestroy, EventPublisher {

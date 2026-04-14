@@ -1,11 +1,11 @@
 import { Injectable, OnModuleInit, OnModuleDestroy, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Kafka, Consumer } from 'kafkajs';
-import { CardStatusEnum, IssuedCardEntity } from '../../entities/issued-card.entity';
 import { Repository } from 'typeorm';
 import { KafkaService } from './kafka.service';
-import { CloudEvent } from '../../../../../../../common/interfaces/cloudevent.interface';
-import { config } from '../../../../../../../common/constants/constants.config';
+import { CardStatusEnum, IssuedCardEntity } from '../../db/typeorm/entities/issued-card.entity';
+import { config } from '../../../../../common/constants/constants.config';
+import { CloudEvent } from '../../../../../common/interfaces/cloudevent.interface';
 
 @Injectable()
 export class KafkaConsumerService implements OnModuleInit, OnModuleDestroy {

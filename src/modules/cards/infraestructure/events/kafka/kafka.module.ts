@@ -2,7 +2,7 @@ import { Module, Global } from '@nestjs/common';
 import { KafkaService } from './kafka.service';
 import { KafkaConsumerService } from './kafka.consumer.kafka';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { IssuedCardEntity } from '../../entities/issued-card.entity';
+import { IssuedCardEntity } from '../../db/typeorm/entities/issued-card.entity';
 
 @Global()
 @Module({
