@@ -1,4 +1,4 @@
-# 🏦 Card Issuer Service - Reto Técnico (Arquitectura Event-Driven)
+# Reto Técnico BCP - Cesar Torres
 
 ## 📌 Descripción del proyecto
 
@@ -17,12 +17,12 @@ El sistema simula el flujo completo de solicitud de tarjeta para nuevos clientes
 
 ## ⚙️ Tecnologías utilizadas
 
-- NestJS (Backend Framework)
-- KafkaJS (Apache Kafka)
-- MySQL (Persistencia de datos)
-- Docker & Docker Compose
+- NestJS: Backend framework
+- KafkaJS: Streaming de eventos
+- MySQL: Base de datos
+- Docker y Docker Compose: Contenedores
 - TypeScript
-- Arquitectura Hexagonal (Ports & Adapters)
+- Arquitectura Hexagonal
 
 ---
 
